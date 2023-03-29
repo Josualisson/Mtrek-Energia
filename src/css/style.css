@@ -375,6 +375,14 @@ nav {
       width: 20rem !important;
       height: auto !important;
     }
+    .video__img{
+        width: 100% !important;
+        height: 10rem;
+        overflow: hidden;
+    }
+    .rounded{
+        width: 20rem;
+    }
   }
   .lightbox:target{
     outline: none;
