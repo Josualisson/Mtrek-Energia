@@ -478,21 +478,30 @@ li span {
 
 /* DIV DEPOIMENTOS */
 .testimony{
-    background-color: #FFFFFF;
+    background: rgb(190, 27, 125);
+    background: linear-gradient(100deg, rgba(190, 27, 125, 0.452) 0%, rgb(163, 22, 130) 35%, rgba(134, 20, 128, 0.849) 100%);
+    padding: 5rem 0rem  5rem 0rem;
 }
 .testimony h1 {
+    color: #FFFFFF;
+    text-decoration: underline 3px white;
     font-family: Roboto, sans-serif;
-    color: black;
     font-weight: 800;
     font-size: 33px;
 }
 .card__testimony{
-    border: solid 1px #c7c7c7;
+    background-color: rgb(224, 224, 224);
+    border: solid 1px #5c5c5c;
     border-radius: 5px;
     margin: 2rem;
-    box-shadow: #c7c7c7 10px 10px 10px 0px;
+    box-shadow: #000000 10px 10px 10px 0px;
     text-align: center;
     margin-top: 4rem !important;
+}
+.card__testimony:hover{
+    transform: scale(1.1);
+    transition: cubic-bezier(0.895, 0.03, 0.685, 0.22) .2s;
+    box-shadow: #bdbdbd 10px 10px 10px 0px;
 }
 .card__testimony-img img {
     margin-top: 1.5rem;
@@ -516,4 +525,152 @@ li span {
     .card__testimony{
         width: 80% !important;
     }
+}
+
+/* DIV ARTICLE CRANÇA */
+.belief{
+    background-color: #ececec;
+    padding: 7rem 0 7rem 0;
+    font-family: Roboto, sans-serif;
+}
+
+.belief__left h2{
+    font-size: 28px;
+    color: black;
+    font-weight: 900;
+}
+.belief__left p {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.belief__right p{
+    color: black;
+    font-size: 17px;
+}
+.belief__right h1{
+    font-size: 60px;
+    color: #5e8487;
+    font-weight: 900;
+}
+@media (max-width: 999px) {
+    .belief{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .belief__left{
+        margin-left: 50px;
+        width: 90% !important;
+    }
+    .belief__right{
+        margin-left: 50px;
+        width: 90% !important;
+    }
+}
+/* DIV DÚVIDAS FREQUENTES */
+
+.summary__accordion{
+    background-color: #ececece5;
+    padding: 7rem 0 7rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+}
+.summary__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.summary__accordion .fa-question{
+    background: rgb(190, 27, 125);
+    background: linear-gradient(100deg, rgba(190, 27, 125, 0.452) 0%, rgb(163, 22, 130) 35%, rgba(134, 20, 128, 0.849) 100%);
+    padding: 5rem 0rem  5rem 0rem;
+    color: #ffffff;
+    padding: 1.2rem 1.3rem 1.2rem 1.3rem;
+    border-radius: 100%;
+    font-size: 20px;
+    margin-top: -5px;
+    animation: go-back 4s infinite alternate;
+}
+.doubt{
+    margin-top: 5rem;
+    width: 80%;
+}
+
+
+details .doubt {
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	padding: 1.5em;
+}
+
+details
+{
+    transition: height .1s ease;
+    overflow: hidden;
+}
+
+details:not([open])
+{
+    height: 60px;
+}
+
+details[open]
+{
+    height: 257px;
+}
+summary {
+	list-style: none;
+}
+
+summary {
+	padding: .75em 1em;
+	cursor: pointer;
+	position: relative;
+	padding-left: calc(1.75rem + .75rem + .75rem);
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+}
+details:hover {
+    box-shadow: #000000 5px 5px 5px 5px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+summary:before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: .75rem;
+	content: "→";
+	width: 1.75rem;
+	height: 1.75rem;
+	background-color: #000;
+	color: #FFF;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+details[open] summary {
+    margin-bottom: 10px;
+}
+details[open] summary:before {
+	content: "↓";
+}
+
+.summary__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.summary__button .btn-outline-secondary{
+    border: black 2px solid !important;
+    color: black;
+    padding: 1rem 5rem 1rem 5rem;
+    font-weight: 900;
+}
+.summary__button .btn-outline-secondary:hover{
+    background-color: #000;
 }
