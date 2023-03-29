@@ -207,6 +207,7 @@ nav {
     color: black;
     font-size: 16px;
 }
+
 /* INFO 2 */
 .info__paragraph {
     font-family: Roboto, sans-serif;
@@ -214,22 +215,25 @@ nav {
     color: black;
     margin-top: 3rem !important;
 }
-.info__h2{
+
+.info__h2 {
     font-family: Roboto, sans-serif;
     font-size: 30px;
-    color: black; 
+    color: black;
     font-weight: 900;
     margin-top: 3rem !important;
 }
 
-.info__div-button{
+.info__div-button {
     margin-top: 2rem !important;
 }
-.info__div-button button{
+
+.info__div-button button {
     height: 3rem;
     margin-top: 10px;
 }
-.info2{
+
+.info2 {
     align-items: center;
     text-align: center;
     display: flex;
@@ -242,10 +246,11 @@ nav {
 
 
 .info2 img:nth-child(2) {
-    animation: go-back 5s infinite alternate-reverse;
+    animation: go-back 3s infinite alternate-reverse;
     width: 20rem;
     margin-top: 3rem;
 }
+
 .info2 h3 {
     font-family: Roboto, sans-serif;
     z-index: 100;
@@ -254,33 +259,37 @@ nav {
     font-weight: 900;
 }
 
-.info2__card{
+.info2__card {
     margin-top: 5rem !important;
     z-index: 999;
     width: 19rem !important;
     z-index: 1;
     text-align: start;
 }
-.info2__card h3{
+
+.info2__card h3 {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     color: #FFFFFF;
 }
+
 .info2__card p {
     font-family: Roboto, sans-serif;
     color: #FFFFFF;
     font-size: 16px;
 }
 
-.info2__cards-cardImg{
+.info2__cards-cardImg {
     width: 120px;
     color: yellow !important;
     border-radius: 80%;
 }
+
 @keyframes go-back {
-    from{
+    from {
         transform: translateX(20px);
     }
+
     to {
         transform: translate(0);
     }
@@ -288,7 +297,7 @@ nav {
 
 /* DIV STATISTIC */
 
-.statistic{
+.statistic {
     background-color: #FFFFFF;
     font-family: Roboto, sans-serif;
     display: flex;
@@ -298,14 +307,17 @@ nav {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
-@media (max-width: 999px){
-    .statistic{
-    text-align:center;
-    padding-top: 5rem;
-    flex-direction: column;
+
+@media (max-width: 999px) {
+    .statistic {
+        text-align: center;
+        padding-top: 5rem;
+        flex-direction: column;
     }
+
     .statistic .statistic__right {
-        display: flex;        justify-content: center;
+        display: flex;
+        justify-content: center;
         margin-top: 4rem;
     }
 }
@@ -313,16 +325,18 @@ nav {
 /* DIV VIDEO */
 
 
-.video__button-exit{
+.video__button-exit {
     text-decoration: none !important;
 }
-.fechar{
+
+.fechar {
     display: flex;
     justify-content: flex-end;
     width: 70%;
     text-decoration: none;
-  }
-  .fechar button{
+}
+
+.fechar button {
     padding: 5px;
     width: 2.5rem;
     background: rgb(255, 169, 169);
@@ -330,13 +344,14 @@ nav {
     color: red;
     font-size: 20px;
     border: none;
-  }
-  
-  .fechar button:hover{
+}
+
+.fechar button:hover {
     opacity: 0.8;
     transition: .2s ease-in-out;
-  }
-  .lightbox{
+}
+
+.lightbox {
     display: none;
     flex-direction: column;
     position: fixed;
@@ -346,17 +361,19 @@ nav {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
-  }
-  .lightbox img{
+}
+
+.lightbox img {
     display: flex;
     width: 35rem !important;
     height: auto !important;
-  }
-  .thumbnail-container {
+}
+
+.thumbnail-container {
     position: relative;
-  }
-  
-  .play-icon {
+}
+
+.play-icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -365,36 +382,40 @@ nav {
     height: 80px;
     background: url('/src/img/play.png') no-repeat center;
     background-size: contain;
-  }
-  
-  @media (max-width: 999px) {
-    .lightbox img{
-      display: flex;
-      width: 20rem !important;
-      height: auto !important;
+}
+
+@media (max-width: 999px) {
+    .lightbox img {
+        display: flex;
+        width: 20rem !important;
+        height: auto !important;
     }
-    .video__img{
+
+    .video__img {
         width: 100% !important;
         height: 10rem;
         overflow: hidden;
     }
-    .rounded{
+
+    .rounded {
         width: 20rem;
     }
-  }
-  .lightbox:target{
+}
+
+.lightbox:target {
     outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .video__img{
+}
+
+.video__img {
     opacity: 0.9;
-  }
+}
 
-  /* DIV INFO3 */
+/* DIV INFO3 */
 
-  .info3{
+.info3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,24 +425,95 @@ nav {
     font-family: Roboto, sans-serif;
     padding-top: 4rem;
     padding-bottom: 3rem;
-  }
-  .info3 h2 {
+}
+
+.info3 h2 {
     color: #fff;
     font-family: Roboto, sans-serif;
     font-size: 28px;
-  }
-  .info3 p{
+}
+
+.info3 p {
     color: #FFFFFF;
     font-family: Roboto, sans-serif;
     font-size: 16px;
-  }
+}
 
-  /* DIV BENEFÍCIOS E VANTAGENS */
+/* DIV BENEFÍCIOS E VANTAGENS */
 
-  .benefits{
+.benefits {
     background-color: #FFFFFF;
-  }
+    padding: 5rem 0 5rem 0;
+}
+.benefits__Left-Right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
 
-  li {
+.benefits li {
+    animation: go-back 4s  infinite alternate;
     list-style-type: none;
-  }
+    margin: 3rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    color: #be1b7c;
+}
+
+li span {
+    color: #fff;
+    background: radial-gradient(circle, rgba(190, 27, 124, 1) 0%, rgba(163, 22, 129, 1) 35%, rgba(134, 20, 128, 1) 100%);
+    padding: 5px 8px 5px 8px;
+    border-radius: 200px;
+}
+@media (max-width: 999px) {
+    .benefits__Left-Right{
+        flex-direction: column;
+    }
+    .benfits__div-right{
+        margin-top: -45px;
+    }
+}
+
+/* DIV DEPOIMENTOS */
+.testimony{
+    background-color: #FFFFFF;
+}
+.testimony h1 {
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-weight: 800;
+    font-size: 33px;
+}
+.card__testimony{
+    border: solid 1px #c7c7c7;
+    border-radius: 5px;
+    margin: 2rem;
+    box-shadow: #c7c7c7 10px 10px 10px 0px;
+    text-align: center;
+    margin-top: 4rem !important;
+}
+.card__testimony-img img {
+    margin-top: 1.5rem;
+}
+.card__testimony-text {
+    font-family: Roboto, sans-serif;
+    margin-top: 1rem;
+}
+.card__testimony-text h3{
+    font-weight: 700;
+    color: black;
+}
+.card__testimony-text p:nth-child(2){
+    font-weight: 600;
+    color: black;
+}
+.card__testimony-text p:nth-child(3){
+    color: black;
+}
+@media (max-width: 999px) {
+    .card__testimony{
+        width: 80% !important;
+    }
+}
