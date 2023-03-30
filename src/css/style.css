@@ -264,7 +264,19 @@ nav {
     z-index: 999;
     width: 19rem !important;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
     text-align: start;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #ccc;
+    margin: 10px;
+    box-shadow: #000000 5px 5px 5px 5px;
+}
+.info2__card:hover{
+    transform: rotate(1deg);
+    transition: linear .1s;
+    box-shadow: #4d0013 5px 5px 5px 5px;
 }
 
 .info2__card h3 {
@@ -280,9 +292,7 @@ nav {
 }
 
 .info2__cards-cardImg {
-    width: 120px;
-    color: yellow !important;
-    border-radius: 80%;
+    width: 150px;
 }
 
 @keyframes go-back {
@@ -294,6 +304,7 @@ nav {
         transform: translate(0);
     }
 }
+
 
 /* DIV STATISTIC */
 
@@ -383,6 +394,10 @@ nav {
     background: url('/src/img/play.png') no-repeat center;
     background-size: contain;
 }
+.play-icon:hover{
+    opacity: 0.9;
+    transition: cubic-bezier(0.23, 1, 0.320, 1) 1s;
+}
 
 @media (max-width: 999px) {
     .lightbox img {
@@ -399,6 +414,9 @@ nav {
 
     .rounded {
         width: 20rem;
+    }
+    .thumbnail-container img{
+        height: auto !important;
     }
 }
 
@@ -584,6 +602,15 @@ li span {
     align-items: center;
     justify-content: center;
 }
+@keyframes info {
+    from {
+        transform: translateY(-2px);
+    }
+
+    to {
+        transform: translateY(2px);
+    }
+}
 .summary__accordion .fa-question{
     background: rgb(190, 27, 125);
     background: linear-gradient(100deg, rgba(190, 27, 125, 0.452) 0%, rgb(163, 22, 130) 35%, rgba(134, 20, 128, 0.849) 100%);
@@ -593,7 +620,7 @@ li span {
     border-radius: 100%;
     font-size: 20px;
     margin-top: -5px;
-    animation: go-back 4s infinite alternate;
+    animation: info 1s infinite alternate;
 }
 .doubt{
     margin-top: 5rem;
@@ -614,15 +641,7 @@ details
     overflow: hidden;
 }
 
-details:not([open])
-{
-    height: 60px;
-}
 
-details[open]
-{
-    height: 257px;
-}
 summary {
 	list-style: none;
 }
@@ -674,3 +693,143 @@ details[open] summary:before {
 .summary__button .btn-outline-secondary:hover{
     background-color: #000;
 }
+
+/* DIV ATENDIMENTO */
+.service{
+    display: flex;
+    flex-direction: column;
+    background-color: #d8d8d8;
+    box-shadow: #d1d1d1 10px 0px 10px 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 0 7rem 0;
+}
+.service .service__button{
+    margin-top: 20px;
+}
+.service .service__button .btn-success, .btn-outline-success {
+    padding: 1rem !important;
+    margin: 10px;
+}
+@media (max-width: 999px) {
+    .service__button{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+/* DIV FOOTER */
+
+footer{
+    color: #FFF;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 6rem;
+    margin-top: 8px;
+}
+
+footer .footer__copywriter p{
+    margin-top: 10px;
+}
+footer .footer__redesSociais a{
+    color: #fff;
+    border: 1px solid #d8d8d8;
+    padding: 3px 8px 3px 8px;
+}
+footer .footer__redesSociais a:nth-child(1):hover{
+    color: #be1b7c;
+    border: 1px solid;
+    transition: ease .1s;
+}
+footer .footer__redesSociais a:nth-child(2):hover{
+    color: #3b5998;
+    border: 1px solid;
+    transition: ease .1s;
+}
+footer .footer__redesSociais a:nth-child(3):hover{
+    color: #0e76a8;
+    border: 1px solid;
+    transition: ease .1s;
+}
+footer .footer__redesSociais a:nth-child(4):hover{
+    color: #c71515;
+    border: 1px solid;
+    transition: ease .1s;
+}
+@media (max-width: 999px) {
+    footer{
+        flex-direction: column;
+        padding: 0 0 1rem 0;
+    }
+}
+
+/* Bottom Whatsapp */
+.fa-whatsapp{
+    font-size: 40px;
+    color: #fff;
+  }
+  .whatsapp:hover{
+    transition: .2s ease;
+  }
+  @keyframes whatsapp {
+    0% {
+        transform: scale(.5)
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0
+    }
+  }
+  
+  .whatsapp:hover {
+    background: #41a79d
+  }
+  
+  .whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 15px;
+    padding: 5px;
+    right: 0;
+    text-align: center;
+    border-radius: 50%;
+    background: #0ba360;
+    z-index: 1000;
+    z-index: 2000;
+  }
+  
+  .whatsapp::after,
+  .whatsapp::before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    border: 4px solid #0ba360;
+    left: -10px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    animation: whatsapp 1.5s ease infinite
+  }
+  
+  .wa::after {
+    animation-delay: .5s
+  }
+  @media (max-width: 999px) and (min-width: 678px) {
+    .whatsapp{
+        bottom: 15rem;
+    }
+  }
+  
+   /* Bottom Whatsapp end*/
